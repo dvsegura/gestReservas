@@ -67,7 +67,6 @@ function add_cliente($pnombre,$papellido,$pdireccion,$ptelefono){
         $tabla.="<td></td>";
         $tabla.="<td></td>";
       }
-
  			$tabla.="</tr>\n";	
  		}
  		$tabla.="</table>"; 	

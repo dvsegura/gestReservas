@@ -4,17 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Gestión de clientes y reservas</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
 </head>
 <body>
-    <header id="header_nav">
-	<nav id="nav_principal">
-	   	<a href="clienteView.php">Registar Cliente</a>
-		<a href="reservaView.php">Realizar Reserva</a>
-		<a href="buscarView.php">Buscar Cliente</a>
-		<a href="listado.php">Listado de Clientes</a>
-		<a href="gestionarUsuario.php">Cambiar Contraseña</a>
-		<a href="close.php">Cerrar Sección</a> <!-- hacerlo con un boton -->
-	</nav>
-    </header>
+	<div class="container">
+    	<header id="header_nav">
+		<nav class="navbar">
+			<ul <ul class="nav justify-content-center">
+	   			<li class="nav-intem active"><a class="nav-link" href="clienteView.php">Registar Cliente</a></li>
+				<li class="nav-intem"><a class="nav-link" href="reservaView.php">Realizar Reserva</a><li class="nav-intem">
+				<li class="nav-intem"><a class="nav-link" href="buscarView.php">Buscar Cliente</a><li class="nav-intem">
+				<li class="nav-intem"><a class="nav-link" href="listado.php">Listado de Clientes</a><li class="nav-intem">
+				<li class="nav-intem"><a class="nav-link" href="gestionarUsuario.php">Cambiar Contraseña</a><li class="nav-intem">
+				<li class="nav-intem"><a class="nav-link" href="close.php">Cerrar Sección</a><li class="nav-intem"> <!-- hacerlo con un boton -->
+			</ul>	
+		</nav>
+   		</header>
+    </div>
+	<!-- bootstrap -->			
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 </body>
 </html>

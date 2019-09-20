@@ -43,24 +43,24 @@ a{
 	user-select: none;
 	cursor: pointer;
 }
-#header_nav{
+/*#header_nav{
     display:flex;
     justify-content: center;
     padding-top:40px; 
-}
-#nav_principal{
+}*/
+/*#nav_principal{
    width: 80%;
    /*border:1px solid red;*/
-   text-align: center;
+   /*text-align: center;
 }
 #nav_principal a{
 	background-color:#346454;
 	border-radius: 3px;
 	color: white;
-}
- #nav_principal a:hover{
+}*/
+/* #nav_principal a:hover{
 	background-color:#F7A351;
-}
+}*/
 /*#login{
 	margin: 0 auto;
 	width: 80%;

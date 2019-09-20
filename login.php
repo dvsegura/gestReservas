@@ -66,17 +66,17 @@ session_start();
                 </div>
             </section>   
     <div class="container">
-    <h1>Acceso limitado</h1>        
+   <!--  <h1 class="mt-5">Acceso limitado</h1>  -->       
    <!--  <section id="login"> -->
     <section class="main-row">
-	<h2>Panel de Acceso</h2>
+	<h1 class="mt-4">Panel de Acceso</h1>
 	<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post" autocomplete="off">
-		<div class="form-group">
+		<div class="form-group col-md-6">
             <label for="usuario">Usuario:</label>
             <input type="text" name="usuario" placeholder="Escriba el usuario" id="usuario" class="form-control">
         </div>
-	    <div class="form-group">
-             <label for="password">Contraseña:</label>
+	    <div class="form-group col-md-6">
+            <label for="password">Contraseña:</label>
             <input type="password" name="password" placeholder="Escriba la contraseña " id="password" class="form-control">
         </div>
 	    <div class="form-group"><input type="submit" name="login" value="Iniciar sección" class="btn btn-primary"></div>
