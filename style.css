@@ -7,7 +7,7 @@ body,html{
     padding: 0;
     height: 100%;
 }
-#container{
+/*#container{
 	padding: 0;
 	width: 80%;
 	background-color:#F7F0F0;
@@ -15,7 +15,7 @@ body,html{
 	text-align: center;
 	border: 1px solid #F7F0F0;
 	height: 100%;
-}
+}*/
 input,label{
 	margin:3px;
 }
@@ -61,11 +61,11 @@ a{
  #nav_principal a:hover{
 	background-color:#F7A351;
 }
-#login{
+/*#login{
 	margin: 0 auto;
 	width: 80%;
     text-align: center;
-}
+}*/
 #centro{
 	width: 70%;
 	margin: auto;
