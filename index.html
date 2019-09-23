@@ -19,9 +19,10 @@
 				}*/
 			</style>
 		</head>
-		<body>
-		
-			<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+		<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!-- menu	 -->			
+			<nav class="navbar navbar-expand-lg navbar-light">
+			<!-- <nav class="navbar navbar-inverse navbar-fixed-top">	 -->			
 					  <a class="navbar-brand" href="#"></a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
@@ -73,43 +74,71 @@
 					</a>
 				</div>
 			</section>
-            <section class="main container">
-			<section class="container-fluid border-bottom">
-				<h1>Casa rural</h1>
-				<div class="row">
-					<div class="col-sm-6 col-md-4 p-4">
-						<h2>Natura</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iste! Officia dignissimos eos eaque quasi incidunt, animi, neque doloremque excepturi, veniam dolorem fuga officiis in enim vero ullam eligendi tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolore, reprehenderit consequatur culpa atque quaerat sit aut blanditiis suscipit, eligendi ea officiis perspiciatis sapiente cupiditate aliquid amet a vitae incidunt?</p>
+			<!-- main -->
+            <section class="container">
+            	<div class="row">
+            		<h1 class="p-4">Casa rural</h1>
+            	</div>
+                <div class="row">
+					<section class="main container border-bottom col-sm-8">					
+					<div class="row">				
+						<div class="col-sm-6 col-md-4 p-4">
+							<h3>Natura</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iste! Officia dignissimos eos eaque quasi incidunt, animi, neque doloremque excepturi, veniam dolorem fuga officiis in enim vero ullam eligendi tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolore, reprehenderit consequatur culpa atque quaerat sit aut blanditiis suscipit, eligendi ea officiis perspiciatis sapiente cupiditate aliquid amet a vitae incidunt?</p>
+						</div>
+						<div class="col-sm-6 col-md-4 p-4">
+							<h3>Rutas</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iste! Officia dignissimos eos eaque quasi incidunt, animi, neque doloremque excepturi, veniam dolorem fuga officiis in enim vero ullam eligendi tenetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nobis consequuntur enim voluptas sint, ad fuga repudiandae temporibus tempora, labore vero dolorem nostrum nulla quibusdam sapiente, minus reprehenderit distinctio? Dolore!.</p>
+						</div>
+						<div class="col-sm-6 col-md-4 p-4">
+							<h3>Relax</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iste! Officia dignissimos eos eaque quasi incidunt, animi, neque doloremque excepturi, veniam dolorem fuga officiis in enim vero ullam eligendi tenetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident debitis sit non ullam quas, enim eum ad nulla iusto, eveniet obcaecati doloribus corporis mollitia voluptate voluptas sed fugit recusandae!.</p>
+						</div>
+					</div>						
+					</section>
+				<aside class="col-md-4 hidden-xs hidden-sm p-4">
+					<h3>Enlaces de Interes</h3>
+					<div class="list-grup">
+						<a href="#" class="list-group-item active">El Tiempo</a>
+						<a href="#" class="list-group-item ">Rutas</a>
+						<a href="#" class="list-group-item ">Consejos</a>
+						<a href="#" class="list-group-item ">Lugares de interés</a>
+						<a href="#" class="list-group-item ">Tienda Online</a>
 					</div>
-					<div class="col-sm-6 col-md-4 p-4">
-						<h2>Rutas</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iste! Officia dignissimos eos eaque quasi incidunt, animi, neque doloremque excepturi, veniam dolorem fuga officiis in enim vero ullam eligendi tenetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nobis consequuntur enim voluptas sint, ad fuga repudiandae temporibus tempora, labore vero dolorem nostrum nulla quibusdam sapiente, minus reprehenderit distinctio? Dolore!.</p>
-					</div>
-					<div class="col-sm-6 col-md-4 p-4">
-						<h2>Relax</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iste! Officia dignissimos eos eaque quasi incidunt, animi, neque doloremque excepturi, veniam dolorem fuga officiis in enim vero ullam eligendi tenetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident debitis sit non ullam quas, enim eum ad nulla iusto, eveniet obcaecati doloribus corporis mollitia voluptate voluptas sed fugit recusandae!.</p>
-					</div>
+				</aside>
 				</div>
-			</section>		
-			<aside class="col-md-3 hidden-xs hidden-sm">
-				<h4>Enlaces de Interes</h4>
-				<div class="list-grup">
-					<a href="#" class="list-group-item active">El Tiempo</a>
-					<a href="#" class="list-group-item ">Rutas</a>
-					<a href="#" class="list-group-item ">Consejos</a>
-					<a href="#" class="list-group-item ">Lugares de interés</a>
-					<a href="#" class="list-group-item ">Tienda Online</a>
-				</div>
-			</aside>
 			</section>
+	<!-- 		contacto -->
+			<section class="container">
+				<div class="row">
+					<h3 class="p-4">Contacta</h3>
+				</div>
+				<form action="contacto.php" method="post">
+					<div class="form-group">
+    					<label for="cont_name">Tu nombre(requerido)</label>
+    					<input type="text" class="form-control" id="cont_name" name="cont_name">
+  					</div>
+  					<div class="form-group">
+    					<label for="cont_mail">Tu correo(requerido)</label>
+    					<input type="mail" class="form-control" id="cont_name" name="cont_mail">
+  					</div>
+  					<div class="form-group">
+    					<label for="cont_mensaje">Asunto(requerido)</label>
+    					<input type="mail" class="form-control" id="cont_mensaje" name="cont_mensaje">
+  					</div>
+  					<div class="form-group">
+  						<input type="submit">
+  					</div>
 
+				</form>
+			</section>
 			<footer>	
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-sm-6">
 							<p>Daylin Vázquez © 2019 </p>
 						</div>
-						<div class="col-xs-6 text-center">
+						<div class="col-sm-6 text-right">
 							<ul class="list-inline">
 								<li class="list-inline-item "><a href="#">Inicio</a></li>
 								<li class="list-inline-item"><a href="#">Reserva</a></li>
