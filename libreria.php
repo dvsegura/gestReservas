@@ -51,7 +51,7 @@ function add_cliente($pnombre,$papellido,$pdireccion,$ptelefono){
  function generar_tabla($parray){
  	if(isset($parray)){
  		$cant=count($parray);
- 		$tabla="<table border='1' cellpadding='3'><tr><th>Nombre</th><th>Apellido</th><th>Dirección</th><th>Teléfono</th><th>Entrada</th><th>Salida</th><th>Borrar</th><th>Editar</th></tr>"; 	
+ 		$tabla="<table class='table table-striped table-dark'><tr><th>Nombre</th><th>Apellido</th><th>Dirección</th><th>Teléfono</th><th>Entrada</th><th>Salida</th><th>Borrar</th><th>Editar</th></tr>"; 	
  		for ($i=0;$i<$cant;$i++){
  			$tabla.="<tr align='center'>"; 			
  			$tabla.="<td>".$parray[$i]['nombre']."</td>";
@@ -205,11 +205,11 @@ function paginacion($ptamano_pagina,$ppagina){
   $siguiente = $ppagina + 1;
 
   if($ppagina != 0){                     
-      echo "<a href=listado.php?pagina={$anterior} class='enlace_paginacion'>Anterior</a>";
+      echo "<a class=\"page-link\" href=listado.php?pagina={$anterior} \"tabindex=\"-1\" aria-disabled=\"true\" class='enlace_paginacion'>Anterior</a>";
   }        
 
   if($ppagina < ($fila_registro['num']/$ptamano_pagina)-1){                         
-      echo "<a href=listado.php?pagina={$siguiente}>Siguiente</a>";
+      echo "<a class=\"page-link\" href=listado.php?pagina={$siguiente}\"tabindex=\"-1\" aria-disabled=\"true\">Siguiente</a>";
   }   
 }
 }
