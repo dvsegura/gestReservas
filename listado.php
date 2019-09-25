@@ -1,11 +1,4 @@
 <?php 
-require('libreria.php');
-include('menu.html');
-//require('const.php');
-
-$basedatos= new Basedatos();
-//$db=$basedatos->conectar(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
-
 session_start();
 if(isset($_SESSION['acceso'])){
    if($_SESSION['acceso']!=1){
@@ -14,6 +7,12 @@ if(isset($_SESSION['acceso'])){
 }else{
     header("location:login.php");
 }
+require('libreria.php');
+include('menu.html');
+//require('const.php');
+
+$basedatos= new Basedatos();
+//$db=$basedatos->conectar(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
 //conprobar que se ha iniciado seccion
 //paginacion
 $tamano_pagina=4;
@@ -37,7 +36,7 @@ if(isset($_GET['pagina'])){
 		<!-- <div id="izquierda"></div> -->
     <div class="main-row">
 		<!-- <div id="centro"> -->
-      <h3>Listado de usuarios</h3>
+      <div class="row"><h3>Listado de usuarios</h3></div>
 			<?php 
           $basedatos->paginacion($tamano_pagina,$pagina);                                             
 			?>

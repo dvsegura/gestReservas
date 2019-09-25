@@ -51,7 +51,7 @@ function add_cliente($pnombre,$papellido,$pdireccion,$ptelefono){
  function generar_tabla($parray){
  	if(isset($parray)){
  		$cant=count($parray);
- 		$tabla="<table class='table table-striped table-dark'><tr><th>Nombre</th><th>Apellido</th><th>Dirección</th><th>Teléfono</th><th>Entrada</th><th>Salida</th><th>Borrar</th><th>Editar</th></tr>"; 	
+ 		$tabla="<table class='table table-hover'><tr><th scope='col'>Nombre</th><th scope='col'>Apellido</th><th scope='col'>Dirección</th><th scope='col'>Teléfono</th><th scope='col'>Entrada</th><th scope='col'>Salida</th><th scope='col'>Borrar</th><th scope='col'>Editar</th></tr>"; 	
  		for ($i=0;$i<$cant;$i++){
  			$tabla.="<tr align='center'>"; 			
  			$tabla.="<td>".$parray[$i]['nombre']."</td>";

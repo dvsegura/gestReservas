@@ -1,4 +1,12 @@
 <?php 
+session_start();
+if(isset($_SESSION['acceso'])){
+   if($_SESSION['acceso']!=1){
+   	header("location:login.php");
+   }
+}else{
+	header("location:login.php");
+}
 require('libreria.php');
 include('menu.html');
 
@@ -8,15 +16,6 @@ include('menu.html');
 
 $fichero= new Fichero();
 
-session_start();
-if(isset($_SESSION['acceso'])){
-   if($_SESSION['acceso']!=1){
-   	header("location:login.php");
-   }
-}else{
-	header("location:login.php");
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,14 +24,18 @@ if(isset($_SESSION['acceso'])){
 	<title>Document</title>
 </head>
 <body>
-    <section id="centro">
-    <h3>Cambiar contraseña</h3>
+    <section id="centro" class="container">
+    <div class="rox"><h3>Cambiar contraseña</h3></div>
 	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-        <div><label>Contraseña actual</label></div>
-        <div><input type="password" name="vieja" value=""></div>
-        <div><label>Nueva Contraseña</label></div>
-        <div><input type="password" name="nueva" value=""></div>
-        <input type="submit" name="cambiar" value="Cambiar contraseña">
+        <div class="form-group col-md-6">
+            <label>Contraseña actual</label>
+            <input type="password" name="vieja" value="" class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Nueva Contraseña</label>
+            <input type="password" name="nueva" value="" class="form-control">
+        </div>
+        <button type="submit" name="cambiar" value="Cambiar contraseña">Cambiar</button>
     </form>	
     <?php
     if(isset($_POST['cambiar'])){
