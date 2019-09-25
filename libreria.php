@@ -205,11 +205,13 @@ function paginacion($ptamano_pagina,$ppagina){
   $siguiente = $ppagina + 1;
 
   if($ppagina != 0){                     
-      echo "<a class=\"page-link\" href=listado.php?pagina={$anterior} \"tabindex=\"-1\" aria-disabled=\"true\" class='enlace_paginacion'>Anterior</a>";
+      //echo "<a class=\"page-link\" href=listado.php?pagina={$anterior} \"tabindex=\"-1\" aria-disabled=\"true\" class='enlace_paginacion'>Anterior</a>";
+     echo "<a href=listado.php?pagina={$anterior} class='enlace_paginacion'>Anterior</a>";
   }        
 
   if($ppagina < ($fila_registro['num']/$ptamano_pagina)-1){                         
-      echo "<a class=\"page-link\" href=listado.php?pagina={$siguiente}\"tabindex=\"-1\" aria-disabled=\"true\">Siguiente</a>";
+      //echo "<a class=\"page-link\" href=listado.php?pagina={$siguiente}\"tabindex=\"-1\" aria-disabled=\"true\">Siguiente</a>";
+     echo "<a href=listado.php?pagina={$siguiente} class='enlace_paginacion'>Siguiente</a>";
   }   
 }
 }
